@@ -1,0 +1,43 @@
+<div class="usern_f clearfix">
+    <div class="table">
+        <div class="table-cell"> <a href="#/profile/{{username}}" class="imge"><img src="{{profileimage}}"></a></div>
+        <div class="table-cell"><a href="#/profile/{{username}}"  class="name" > {{name}}</a></div>
+    </div>
+
+
+    <div class="clear"></div>
+    <div class="user_ff">
+        <div class="row clearfix">
+            <div class="following">
+                <a href="#/humansfollowings">
+                    <div class="text-center">{{MyFollowingsCount}}</div>
+                    Following
+                </a>
+            </div>
+            <a href="#/humansfollowers">
+                <div class="followers">
+                    <div class="text-center">{{MyFollowersCount}}</div>
+                    Followers
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="side_menu">
+    <ul>
+        <li ng-class="{ 'active' : istrue('home') }" class="home"><a href="#/home/">Home</a></li>
+        <li ng-class="{ 'active' : istrue('inviter') }" class="inviter"><a href="#/inviter/">Inviter</a></li>
+        <li ng-class="{ 'active' : istrue('documents') }" class="documents"><a href="#/documents/">documents</a></li>
+        <li ng-class="{ 'active' : istrue('humans') }" class="humans"><a href="#/humans/">humans</a></li>
+        <li ng-class="{ 'active' : istrue('photos') }" class="photos"><a href="#/photos/">photos</a></li>
+        <li ng-class="{ 'active' : istrue('blog') }" class="blogs"><a href="#/blog/">blogs</a></li>
+        <li ng-class="{ 'active' : istrue('video') }" class="videos"><a href="#/video/">videos</a></li>
+        <li ng-class="{ 'active' : istrue('music') }" class="music"><a href="#/music/">music</a></li>
+    </ul>
+    <div class="ft-logo">
+        <img src="assets/images/ft-logo.png">
+    </div>
+
+
+</div>

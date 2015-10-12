@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+
+<html ng-app="th">
+<head lang="en">
+
+    <meta charset="utf-8">
+    <title>VOD | Home</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.bxslider.css">
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/base.css">-->
+
+    <title>Index Page</title>
+</head>
+<body>
+<ng-view></ng-view>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+if (!window.jQuery) {
+    document.write('<script src="js/jquery.js"><\/script>');
+}
+
+</script>
+<!--<script src="assets/js/bx.js"></script>-->
+<!--<script defer src="assets/js/fancybox.js"></script>-->
+<!-- angular js -->
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<!-- angular js routes -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.2/angular-strap.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+
+<!--bxslide js-->
+<script type="text/javascript" src="assets/js/jquery.bxslider.js"></script>
+<!--bxslide js-->
+
+<!-- video gular... -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="assets/angular-components/videogular/videogular.min.js"></script>
+<script type="text/javascript" src="assets/angular-components/videogular-controls/vg-controls.min.js"></script>
+<script type="text/javascript" src="assets/angular-components/videogular-overlay-play/vg-overlay-play.min.js"></script>
+<script type="text/javascript" src="assets/angular-components/videogular-poster/vg-poster.min.js"></script>
+<script type="text/javascript" src="assets/angular-components/videogular-buffering/vg-buffering.min.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="config/custom-modules.js"></script>
+<script type="text/javascript" src="config/constants.js"></script>
+<script type="text/javascript" src="routes/userRoutes.js"></script>
+<!--Controllers-->
+<script type="text/javascript" src="controllers/index.js"></script>
+<script type="text/javascript" src="controllers/home.js"></script>
+<!--Controllers-->
+<script type="text/javascript" src="services/httpRequest.js"></script>
+<script type="text/javascript" src="services/UrlConvertor.js"></script>
+
+<script type="text/javascript" src="directives/hashtag.js"></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.7.1/loading-bar.min.js'></script>
+<script src="//cdn.jsdelivr.net/satellizer/0.12.5/satellizer.min.js"></script>
+
+
+</body>
+</html>

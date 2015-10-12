@@ -1,0 +1,34 @@
+<!--<ul class="bxslider" >-->
+
+<h1 class="abc">hello</h1>
+
+<ul  class="bxslider">
+    <!--<li><iframe src="{{videos.contents[0].url}}" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>-->
+
+    <li ng-repeat = "videos in allVideosData track by $index " class="list" ng-if = "$index<3">
+    <div>
+        <videogular vg-theme="videos.contents[0].url.theme.url">
+            <vg-media vg-src="videos.contents[0].url.sources"
+                      vg-tracks="videos.contents[0].url.tracks">
+            </vg-media>
+            <vg-controls>
+                <vg-play-pause-button></vg-play-pause-button>
+                <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+                <vg-scrub-bar>
+                    <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                </vg-scrub-bar>
+                <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
+                <vg-volume>
+                    <vg-mute-button></vg-mute-button>
+                    <vg-volume-bar></vg-volume-bar>
+                </vg-volume>
+                <vg-fullscreen-button></vg-fullscreen-button>
+            </vg-controls>
+
+            <vg-overlay-play></vg-overlay-play>
+        </videogular>
+    </div>
+<br/>
+</li>
+     <!--<li><iframe src="http://player.vimeo.com/video/17914974" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>>-->
+</ul>
